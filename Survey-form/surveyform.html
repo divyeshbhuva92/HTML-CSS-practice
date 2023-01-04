@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="surveyform.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 id="title">Survey form</h1>
+      <p id="description">
+        Please fill out this form with the required information
+      </p>
+      <div class="form-container">
+        <form id="survey-form">
+          <fieldset>
+            <label for="name" id="name-label">
+              Name:
+              <input type="text" id="name" placeholder="Enter name" required
+            /></label>
+            <label for="email" id="email-label">
+              Email:
+              <input
+                type="email"
+                id="email"
+                pattern="[^ @]*@[^ @]*"
+                placeholder="Enter email"
+                required
+            /></label>
+            <label for="age" id="number-label">
+              Age:
+              <input
+                type="number"
+                id="number"
+                min="14"
+                max="110"
+                placeholder="Enter age"
+            /></label>
+            <label>
+              Courses:
+              <label>
+                <input type="checkbox" class="courses" value="front-end" />
+                Front-end
+              </label>
+              <label
+                ><input type="checkbox" class="courses" value="back-end" />
+                Back-end</label
+              >
+              <label>
+                <input
+                  type="checkbox"
+                  class="courses"
+                  value="data-visulization"
+                />
+                Data Visulization
+              </label>
+              <label>
+                <input type="checkbox" class="courses" value="aws" /> AWS
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  class="courses"
+                  value="additional-course"
+                />
+                Additional Course
+              </label>
+            </label>
+          </fieldset>
+          <div id="review">
+            <label for="dropdown">
+              What do you like most about this course?
+              <select id="dropdown">
+                <option value="1">111</option>
+                <option value="2">222</option>
+              </select>
+            </label>
+            <label>
+              Would you recommend this to others?
+              <label for="yes">
+                <input
+                  type="radio"
+                  id="yes"
+                  value="yes"
+                  class="recommendation"
+                  name="only-one-radio"
+                />
+                Yes
+              </label>
+              <label for="no">
+                <input
+                  type="radio"
+                  id="no"
+                  value="no"
+                  class="recommendation"
+                  name="only-one-radio"
+                />
+                No
+              </label>
+              <label for="not-sure">
+                <input
+                  type="radio"
+                  id="not-sure"
+                  value="not-sure"
+                  class="recommendation"
+                  name="only-one-radio"
+                />
+                Not sure
+              </label>
+            </label>
+            <label for="comments">
+              Comments or suggestions:
+              <textarea id="comments" rows="5" cols="35"></textarea>
+            </label>
+          </div>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
