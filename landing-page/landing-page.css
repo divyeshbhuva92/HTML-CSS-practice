@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  display: flex;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+  overflow: hidden;
+}
+
+#main-container {
+  max-width: 960px;
+  margin: 70px auto 0 auto;
+  overflow: hidden;
+}
+
+.logo {
+  width: 300px;
+  filter: invert(100%);
+}
+
+.nav-link {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.message-box {
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.message-box h1 {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #f1c40f;
+  max-width: 150px;
+  border: none;
+}
+.message-box #email {
+  display: block;
+  margin: auto;
+  max-width: 40%;
+  min-width: 250px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+#features {
+  padding: 10px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#features .feature {
+  display: flex;
+  justify-self: center;
+  align-items: baseline;
+}
+
+#features .feature div {
+  padding: 15px;
+  margin-left: 15px;
+}
+#features i {
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(top, #454c52 50%, black 100%);
+  -webkit-background-clip: text;
+}
+
+#how-it-work {
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+#how-it-work #video {
+  width: 600px;
+  height: 340px;
+}
+
+#pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px 3px;
+}
+
+.price-box {
+  border: solid #333 3px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 350px;
+}
+
+.price-box:first-child {
+  margin-right: 10px;
+}
+
+.price-box:last-child {
+  margin-left: 10px;
+}
+
+.price-box h3 {
+  background-color: #ddd;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 7px 7px 0 0;
+  box-sizing: border-box;
+}
+
+.price-box h2 {
+  padding: 10px 0 5px 0;
+  margin-bottom: 0;
+}
+
+.price-box p {
+  padding: 0 10px 15px 10px;
+  margin-top: 0;
+}
+
+.price-box .btn {
+  display: inline-block;
+  margin: 0 0 15px 0;
+}
+
+/*-------------FOOTER---------------- */
+#main-footer {
+  background-color: #ccc;
+  padding: 10px 5px;
+  margin-top: 25px;
+  display: flex;
+  overflow: hidden;
+}
+
+#main-footer div {
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
+}
+#main-footer div:last-child {
+  width: 100%;
+  text-align: right;
+}
+
+@media only screen and (max-width: 650px) {
+  #nav-bar ul {
+    display: flex;
+  }
+  #nav-bar ul li {
+    padding: 1rem 2rem;
+  }
+  #nav-bar ul li a {
+    color: #333;
+    font-size: 1.2rem;
+  }
+  .message-box #email {
+    display: block;
+    margin: auto;
+    max-width: 40%;
+    min-width: 250px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  #main-container {
+    margin-top: 100px;
+  }
+  #pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 3px;
+  }
+  #main-footer div:first-child {
+    display: none;
+  }
+  #main-footer div {
+    width: 100%;
+    text-align: inherit;
+    padding: 0 15px;
+  }
+}

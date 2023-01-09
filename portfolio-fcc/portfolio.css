@@ -1,0 +1,109 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #0f1d2b;
+  --gray1: #656565;
+  --gray0: #292929;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  top: 0px;
+  background-color: var(--gray1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+#navbar a {
+  color: var(--gray0);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+}
+#navbar a:last-child {
+  margin-right: 15px;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray1);
+}
+
+.welcome-data {
+  position: absolute;
+  left: 11%;
+  color: var(--light);
+  text-align: center;
+}
+.welcome-data p {
+  font-size: 70px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+/* .welcome-data p::first-letter {
+  font-size: 100px;
+} */
+.first-char {
+  font-size: 100px;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
+.profile-pic-bg {
+  background-color: var(--gray0);
+  height: 65vh;
+  width: 70%;
+  position: absolute;
+  right: 0px;
+  display: flex;
+  justify-content: right;
+}
+.profile-pic-bg img {
+  height: 100%;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+#projects {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--gray0);
+  color: var(--light);
+}

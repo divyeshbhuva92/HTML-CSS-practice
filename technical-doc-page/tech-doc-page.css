@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #3f4359;
+}
+.semi-bold {
+  font-weight: 500;
+}
+
+/* Side-Navbar----------------------------- */
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-width: 240px;
+  max-width: 250px;
+}
+#navbar {
+  height: 100%;
+  border-right: 2px solid rgba(42, 47, 72, 0.7);
+}
+#navbar > header {
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#navbar ul {
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#navbar li {
+  border-top: 1px solid #2a2f48;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  padding-left: 25px;
+  margin: 0;
+}
+#navbar li:last-child {
+  border-bottom: 1px solid #2a2f48;
+}
+#navbar a {
+  display: block;
+  padding: 10px;
+  margin-bottom: 0;
+  cursor: pointer;
+  color: #2a2f48;
+  text-decoration: none;
+}
+
+/* Main section----------------------------- */
+
+#main-doc {
+  position: absolute;
+  margin-left: 260px;
+  padding: 15px 10px 0 10px;
+}
+#main-doc a {
+  text-decoration: none;
+  color: blue;
+}
+section header {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0;
+}
+section .section-details {
+  padding: 10px;
+}
+.section-details p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+ul li {
+  margin-bottom: 5px;
+}
+p.for-url-links {
+  margin-bottom: 0;
+}
+.url-list {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.code-example {
+  display: block;
+  padding: 5px 10px;
+  background-color: #dedede;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+.inline-cd {
+  background-color: #dedede;
+  border-radius: 3px;
+  padding: 1px 2px;
+}
+.devtool-image {
+  width: 100%;
+}
+
+@media (max-width: 680px) {
+  #main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 240px;
+  }
+}
